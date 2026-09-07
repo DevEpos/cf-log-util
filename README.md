@@ -1,4 +1,4 @@
-# cflogs
+# Cloud Foundry Logging Util
 
 Transform and filter Cloud Foundry application logs — from a captured log
 file or a live `cf logs` stream — into clean JSON or CSV.
@@ -6,7 +6,7 @@ file or a live `cf logs` stream — into clean JSON or CSV.
 ## Install
 
 ```bash
-npm install -g cflogs
+npm install -g cf-log-util
 ```
 
 ## Usage
