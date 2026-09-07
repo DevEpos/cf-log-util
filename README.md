@@ -1,5 +1,7 @@
 # Cloud Foundry Logging Util
 
+[![npm version](https://img.shields.io/npm/v/cf-log-util.svg?style=flat)](https://www.npmjs.com/package/cf-log-util)
+
 Transform and filter Cloud Foundry application logs — from a captured log
 file or a live `cf logs` stream — into clean JSON or CSV.
 
