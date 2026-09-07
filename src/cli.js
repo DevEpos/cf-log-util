@@ -83,8 +83,7 @@ export async function main() {
   }
 
   if (appNames.length > 1 && !orderedProperties.includes("app")) {
-    const defaultPropertyCount = orderedProperties.filter((property) => DEFAULT_PROPERTIES.includes(property)).length;
-    orderedProperties.splice(defaultPropertyCount, 0, "app");
+    orderedProperties.unshift("app");
   }
 
   if (appNames.length > 0) {
