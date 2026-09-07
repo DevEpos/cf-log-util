@@ -1,4 +1,5 @@
 node_modules/
 coverage/
 *.log
+!test/fixtures/*.log
 .DS_Store

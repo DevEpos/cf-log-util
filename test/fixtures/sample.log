@@ -1,0 +1,4 @@
+2026-09-07T10:00:00.00+0000 [APP/PROC/WEB/0] OUT {"logger":"myapp","timestamp":"2026-09-07T10:00:00.00Z","level":"INFO","correlation_id":"c-1","msg":"Request started","thread":"http-nio-1"}
+2026-09-07T10:00:01.00+0000 [APP/PROC/WEB/0] OUT {"logger":"myapp","timestamp":"2026-09-07T10:00:01.00Z","level":"ERROR","correlation_id":"c-2","msg":"Something failed","stacktrace":"Error: boom"}
+2026-09-07T10:00:02.00+0000 [APP/PROC/WEB/0] OUT this line has no json payload
+2026-09-07T10:00:03.00+0000 [APP/PROC/WEB/0] OUT {"logger":"other","timestamp":"2026-09-07T10:00:03.00Z","level":"WARN","correlation_id":"c-3","msg":"Slow response","thread":"http-nio-2"}
