@@ -2,8 +2,31 @@
 
 [![npm version](https://img.shields.io/npm/v/cf-log-util.svg?style=flat)](https://www.npmjs.com/package/cf-log-util)
 
-Transform and filter Cloud Foundry application logs — from a captured log
-file or a live `cf logs` stream — into clean JSON or CSV.
+`cf logs` gives you a wall of prefixed, multi-line text with JSON payloads
+buried inside it. `cflogs` turns that into clean, structured JSON or CSV you
+can filter, read, or pipe into other tools — working from either a captured
+log file or a live `cf logs` stream.
+
+## Why cf-log-util?
+
+- **No more eyeballing raw `cf logs` output.** Timestamps, app/instance
+  prefixes, `OUT`/`ERR` markers, and embedded JSON payloads are parsed into
+  clean structured records automatically.
+- **One unified stream across apps.** Tail a single app or several at once —
+  multiple `cf logs` streams are merged into one, with an `app` column so you
+  can tell records apart, which is handy when debugging across microservices.
+- **Query logs instead of grepping them.** A small filter expression language
+  (`=`, `>`, `<`, `contains`, `startswith`, `endswith`, combined with
+  `and`/`or`/parentheses) replaces chains of `grep`/`awk`/`jq`.
+- **Control signal vs. noise.** Pick exactly which properties you see — sane
+  defaults, `-p` to add more, `--all-props` for everything, or `-i` for an
+  interactive picker.
+- **JSON or CSV, your choice.** Feed JSON into `jq` or other tooling, or
+  export CSV straight into Excel/spreadsheets for further analysis.
+- **Works with the `cf` CLI you already have.** No CF plugin to install —
+  `cflogs` just wraps `cf logs`.
+- **Zero runtime dependencies.** Small, focused codebase; fast to install and
+  fast to run.
 
 ## Install
 
