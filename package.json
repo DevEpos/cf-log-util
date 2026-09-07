@@ -1,6 +1,6 @@
 {
   "name": "cf-log-util",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Transform and filter Cloud Foundry app logs (files or live `cf logs` streams) into JSON or CSV",
   "type": "module",
   "bin": {
