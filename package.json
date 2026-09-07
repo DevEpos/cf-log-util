@@ -30,10 +30,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevEpos/cflogs.git"
+    "url": "git+https://github.com/DevEpos/cf-log-util.git"
   },
   "bugs": {
-    "url": "https://github.com/DevEpos/cflogs/issues"
+    "url": "https://github.com/DevEpos/cf-log-util/issues"
   },
-  "homepage": "https://github.com/DevEpos/cflogs#readme"
+  "homepage": "https://github.com/DevEpos/cf-log-util#readme"
 }
