@@ -1,0 +1,39 @@
+{
+  "name": "cflogs",
+  "version": "0.1.0",
+  "description": "Transform and filter Cloud Foundry app logs (files or live `cf logs` streams) into JSON or CSV",
+  "type": "module",
+  "bin": {
+    "cflogs": "bin/cflogs.js"
+  },
+  "main": "src/cli.js",
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "cloud-foundry",
+    "cf",
+    "cf-logs",
+    "logs",
+    "cli",
+    "ndjson",
+    "csv"
+  ],
+  "author": "DevEpos",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevEpos/cflogs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DevEpos/cflogs/issues"
+  },
+  "homepage": "https://github.com/DevEpos/cflogs#readme"
+}
